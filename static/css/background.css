@@ -1,0 +1,130 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #040404;
+    color: #fff;
+    position: relative;
+    background: transparent;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    background: #040404 url("img/background-image.jpg "/*https://natkaida.github.io/flask_site/static/img/bg.jpg*/) top right no-repeat;
+    background-size: cover;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    z-index: -1;
+}
+
+li {
+    list-style-type: none;
+    color: white;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+header {
+    left: 0;
+    top: 0;
+    position: fixed;
+    right: 0;
+}
+
+.header-li:after {
+    content: "";
+    display: block;
+    width: 75%;
+    height: 3px;
+
+
+    background-color: rgb(167, 134, 43);
+    opacity: 0;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+    transition: opacity 0.3s ease-in-out 0s;
+}
+
+.header-li:hover:after {
+    opacity: 1;
+}
+
+.header-li:hover {
+    color: rgb(238, 237, 237);
+}
+
+.header-ul {
+    margin-block-start: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    font-size: 5vh;
+    font-weight: bolder;
+    height: 10vh;
+    width: 100%;
+}
+
+.header-li {
+    padding-top: 11px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 15px;
+    position: relative;
+    text-decoration: none;
+    transition: color 0.3s linear;
+    text-shadow: 0.1vh 0.1vh 0.3vh black;
+}
+
+
+.project{
+    position: absolute;
+    top: 12px;
+    left: 9vh;
+}
+
+
+
+.container{
+    padding-top: 0vh;
+    padding-left: 3vh;
+}
+
+h2{
+    padding-top: 2vh;
+    padding-left: 1vh;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    font-weight: lighter;
+    color: #aaaaaa;
+    letter-spacing: 2px;
+    line-height: 1px;
+    text-transform: uppercase;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track{
+    background: #f1f1f1;
+}
+  
+::-webkit-scrollbar-thumb{
+    background: #888;
+}
+  
+
+::-webkit-scrollbar-thumb:hover{
+    background: #555;
+}

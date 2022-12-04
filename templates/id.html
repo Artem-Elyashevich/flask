@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/background.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/id.css') }}">
+    <title>Пользавотель</title>
+</head>
+<body>
+    <header>
+
+        <ul class="header-ul">
+            <div class="header-content">
+                <li class="header-li main"><a href="/main">Главнaя</a></li>
+                <li class="header-li nav-header"><a href="/enter">Вход</a></li>
+                <li class="header-li contacts"><a href="/contacts">Контакты</a></li>
+            </div>
+    
+    
+        </ul>
+    </header>
+
+    <div class="container">
+        <div class="wrapper">
+            <form class="form" method="POST">
+                <div class="name item" placeholder="Имя">{{ name }}</div>
+                <div class="age item">{{ old }}</div>
+                <div class="email item">{{ email }}</div>
+                <div class="city item">{{ city }}</div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,140 @@
+.blog:after {
+    content: "";
+    display: block;
+    width: 75%;
+    height: 3px;
+
+
+    background-color: rgb(167, 134, 43);
+    opacity: 1;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+    transition: opacity 0.3s ease-in-out 0s;
+}
+.container{
+    display: flex;
+    margin-top: 12vh;
+    margin-left: 5%;
+    
+    background-color: #000000e6;
+    height: 120vh;
+    width: 90%;
+}
+
+.header-content{
+    display: block;
+    text-align: end;
+    position: relative;
+    right: 10vh;
+}
+
+input{
+    outline: none;
+    box-shadow: none;
+    font-size: 14px;
+    background: none;
+    border: none;
+    transition: 0.3s;
+    color: #fff;
+    border-bottom: 1px solid white;
+}
+
+.message{
+    opacity: 1;
+    position: absolute;
+    margin-top: 0%;
+    left: 33.25%;
+    height: 54%;
+    width: 35%;
+
+}
+
+.name-message{
+    position: absolute;
+    top: 20%;
+    left: 2.5%;
+    width: 95%;
+    height: 10%;
+}
+
+.old-message{
+    position: absolute;
+    top: 32%;
+    left: 2.5%;
+    width: 95%;
+    height: 10%;
+}
+
+.city-message{
+    position: absolute;
+    top: 44%;
+    left: 2.5%;
+    width: 95%;
+    height: 10%;
+}
+.email-message{
+    height: 10%;
+    position: absolute;
+    top: 56%;
+    left: 2%;
+    width: 95.8%;
+}
+.password-message{
+    
+    position: absolute;
+    top: 68%;
+    left: 2%;
+    width: 95.8%;
+    height: 10%;
+    
+}
+.eye-outline{
+    filter: invert();
+    width: 5%;
+    position: relative;
+    top: 70%;
+    left: 92%;
+    cursor: pointer;
+}
+
+.password__btn::after:active{
+    opacity: 0.3;
+}
+.email-message, .name-message, .password-message, .old-message, .city-message:hover{
+    padding-top: 1px;
+}
+
+h1{
+    position: absolute;
+    top: 3%;
+    left: 43.5%;
+}
+
+.btn{
+    background: #1e90ff;
+    padding: 10px 30px;
+    color: #fff;
+    transition: 0.4s;
+    font-size: 20px;
+    position: absolute;
+    top: 80%;
+    left: 34.25%;
+}
+.btn:hover{
+    background: #0079f2;
+    cursor: pointer;   
+}
+label{
+    color: #aaaaaa;
+    font-family: "Poppins", sans-serif;
+    font-weight: lighter;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:80%;
+    cursor: pointer;
+}

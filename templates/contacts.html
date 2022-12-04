@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Контакты</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/background.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/contacts.css') }}"/>
+    <link rel="shortcut icon" href="static/css/img/icon.png" type="image/png"/>
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="container">
+        <h2>Контакты</h2>
+        <form class="message" method="post">
+            <input type="text" name="name" class="name-message form" placeholder="Имя" autocomplete="off" required/>
+            <input type="text" name="email" class="email-message form" placeholder="Ваш Email" autocomplete="off" required/>
+            <input type="text" name="title" class="title-message form" placeholder="Название" autocomplete="off" required/>
+            <input type="text" name="comment" class="comment-message form" placeholder="Комментарий" autocomplete="off" required/>
+            <button type="submit" class="btn">Отправить</button>
+        </form>
+        <div class="info-box -mail row">
+            <iconify-icon icon="bx:map" class="info-img"></iconify-icon>
+            <h2 class="info-h2">Город</h2>
+            <h3 class="info-h3">Зельва</h3>
+        </div>
+        <div class="info-box -loc row">
+            <iconify-icon icon="bx-share-alt" class="info-img"></iconify-icon>
+            <h2 class="info-h2">INSTAGRAM & VK</h2>
+            <div class="vk-inst-img">
+                <a href="https://vk.com/id533683568" target="_blank">
+                    <iconify-icon icon="uil:vk" class="info-vk"></iconify-icon>
+                </a>
+                <a href="https://instagram.com/artem.elyashevich?igshid=YmMyMTA2M2Y=" target="_blank">
+                    <iconify-icon icon="mdi:instagram" class="info-inst"></iconify-icon>
+                </a>
+            </div>
+        </div>
+        <div class="info-box -vk-inst row">
+            <iconify-icon icon="bx-paper-plane" class="info-img"></iconify-icon>
+            <h2 class="info-h2">Телеграм</h2>
+            <a href="https://t.me/artem_elyashevich" target="_blank"><h3 class="info-h3">@artem_elyashevich</h3></a>
+        </div>
+        <div class="info-box -tg row">
+            <iconify-icon icon="mdi:envelope-outline" class="info-img"></iconify-icon>
+            <h2 class="info-h2">Email-адрес</h2>
+            <a href=""><h3 class="info-h3">elyashevich.arteem@gmail.com</h3></a>
+        </div>
+    </div>
+    <p class="title">СОЦСЕТИ И ПОЧТА</p>
+</div>
+<header>
+
+    <ul class="header-ul">
+        <div class="header-content">
+
+            <li class="header-li nav-header"><a href="/main">Главнaя</a></li>
+            <li class="header-li nav-header"><a href="/enter">Вход</a></li>
+            <li class="header-li contacts"><a href="/contacts">Контакты</a></li>
+            <li class="project"><a href="/main">Project</a></li>
+        </div>
+
+
+    </ul>
+
+</header>
+
+
+</body>
+</html>

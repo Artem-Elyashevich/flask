@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Блог</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/background.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/blog.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/enter.css') }}">
+    <link rel="shortcut icon" href="static/css/img/icon.png" type="image/png">
+</head>
+
+<body>
+
+<form class="message-enter" method="POST">
+    <input type="text" name="email" class="email-message_enter form-message-enter" placeholder="Почта" autocomplete="off" required>
+    <input type="password" name="psw" class="password-message_enter form-message-enter password__input" placeholder="Пароль" autocomplete="off" required>
+    <img src="/static/css/img/eye.svg.png" class="eye-outline password__btn">
+    <button type="submit" class="enter_btn">Войти</button>
+    <label class="btn__go">Зарегистрироваться</label>
+    <h2 class="error">{{ err }}</h2>
+</form>
+
+<header>
+
+    <ul class="header-ul">
+        <div class="header-content">
+
+            <li class="header-li nav-header"><a href="/main">Главнaя</a></li>
+            <li class="header-li blog"><a href="/enter">Вход</a></li>
+            <li class="header-li nav-header"><a href="/contacts">Контакты</a></li>
+            <li class="project"><a href="/main">Project</a></li>
+        </div>
+
+    </ul>
+
+</header>
+<div class="wrapper">
+    <div class="container">
+        <h1>Вход</h1>
+    </div>
+</div>
+<script src="{{url_for('static', filename='script/registration.js')}}"></script>
+<script src="{{url_for('static', filename='script/password.js')}}"></script>
+</body>
+
+</html>

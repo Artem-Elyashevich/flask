@@ -1,0 +1,74 @@
+
+h1{
+    position: absolute;
+    top: 3%;
+    left: 47%;
+}
+
+.message-enter{
+    opacity: 1;
+    position: absolute;
+    margin-top: 0%;
+    left: 33.25%;
+    height: 54%;
+    width: 35%;
+
+}
+.email-message_enter{
+    position: absolute;
+    margin-top: 7%;
+    top: 20%;
+    left: 2.5%;
+    width: 95%;
+    height: 10%;
+}
+.password-message_enter{
+    margin-top: 7%;
+    position: absolute;
+    top: 32%;
+    left: 2.5%;
+    width: 95%;
+    height: 10%;
+}
+.enter_btn{
+    background: #1e90ff;
+    padding: 10px 30px;
+    color: #fff;
+    transition: 0.4s;
+    font-size: 20px;
+    position: absolute;
+    top: 63%;
+    left: 38.25%;
+}
+.enter_btn:hover{
+    background: #0079f2;
+    cursor: pointer;   
+}
+label{
+    color: #aaaaaa;
+    font-family: "Poppins", sans-serif;
+    font-weight: lighter;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 45%;
+    cursor: pointer;
+}
+.eye-outline{
+    filter: invert();
+    width: 5%;
+    position: relative;
+    top: 44%;
+    left: 92%;
+    cursor: pointer;
+}
+
+.password__btn:active{
+    opacity: 0.3;
+}
+
+.error{
+    position: absolute;
+    top: 48%;
+    left: 2%;
+}

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="shortcut icon" href="static/css/img/icon.png" type="image/png">
+</head>
+<body>
+<form method="POST">
+    <input name="name" placeholder="name" required>
+    <button type="submit">Go</button>
+</form>
+<header>
+
+    <ul class="header-ul">
+        <div class="header-content">
+            <li class="header-li main"><a href="/main">Главнaя</a></li>
+            <li class="header-li blog"><a href="/blog">Блог</a></li>
+            <li class="header-li contacts"><a href="/contacts">Контакты</a></li>
+        </div>
+
+    </ul>
+
+</header>
+<div class="wrapper">
+    <div class="container">
+        {% block body %}{% endblock %}
+    </div>
+
+
+</body>
+</html>

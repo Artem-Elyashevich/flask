@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Блог</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/background.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/blog.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/data.css') }}">
+    <link rel="shortcut icon" href="static/css/img/icon.png" type="image/png">
+</head>
+
+<body>
+
+
+<form class="message" method="POST">
+    <input type="text" name="name" class="name-message form message" placeholder="Имя" autocomplete="off" required/>
+    <input type="text" name="old" class="old-message form message" placeholder="Возраст" autocomplete="off" required/>
+    <input type="text" name="city" class="city-message form message" placeholder="Город" autocomplete="off" required/>
+    <input type="text" name="email" class="email-message form message" placeholder="Ваш Email" autocomplete="off"
+           required/>
+    <input type="password" name="psw" class="password-message form message password__input" placeholder="Пароль"
+           autocomplete="off" required/>
+    <img src="/static/css/img/eye.svg.png" class="eye-outline password__btn">
+    <button type="submit" class="btn">Отправить</button>
+    <label>{{error}}</label>
+</form>
+
+<header>
+
+    <ul class="header-ul">
+        <div class="header-content">
+
+
+            <li class="header-li main"><a href="/main">Главнaя</a></li>
+            <li class="header-li nav-header"><a href="/enter">Вход</a></li>
+            <li class="header-li contacts"><a href="/contacts">Контакты</a></li>
+            <li class="project"><a href="/main">Project</a></li>
+        </div>
+
+    </ul>
+
+</header>
+<div class="wrapper">
+    <div class="container">
+        <h1>Регистрация</h1>
+    </div>
+</div>
+<script src="{{url_for('static', filename='script/password.js')}}"></script>
+</body>
+
+</html>
